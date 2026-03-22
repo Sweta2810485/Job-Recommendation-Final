@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Create Account | AI Job Recommendation</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="register-container">
+
+        <div class="left-section">
+
+            <h1>AI Job Recommendation System</h1>
+
+            <p> Upload your resume and get AI-powered job recommendations
+               based on your skills and experience.
+            </p>
+
+        </div>
+
+
+        <div class="right-section">
+
+            <h2>Create Account</h2>
+
+                <form id="registerForm">
+
+                    <div class="input-box">
+                        <i class="fa fa-user"></i>
+                        <input type="text"
+                               placeholder="Full Name"
+                               required
+                               oninput="if(!/^[A-Za-z\s]+$/.test(this.value)){this.setCustomValidity('Name should contain only letters');}else{this.setCustomValidity('');}">
+                    </div>
+
+                    <div class="input-box">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email"
+                                id="email"
+                                placeholder="Email Address"
+                                required
+                                oninput="if(!this.value.endsWith('@gmail.com')){this.setCustomValidity('Email must end with @gmail.com');} else {this.setCustomValidity('');}">
+                    </div>
+
+                    <div class="input-box">
+                        <i class="fa fa-lock"></i>
+                         <input type="password"
+                            placeholder="Password"
+                            required
+                            oninput="if(!/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$/.test(this.value)){this.setCustomValidity('Password must contain at least 8 characters, one uppercase, one lowercase, one number and one special character');}else{this.setCustomValidity('');}">
+
+                    </div>
+
+                    <div class="input-box">
+                        <i class="fa fa-lock"></i>
+                         <input type="password"
+                            placeholder="Confirm Password"
+                            required
+                            oninput="if(!/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$/.test(this.value)){this.setCustomValidity('Password must contain at least 8 characters, one uppercase, one lowercase, one number and one special character');}else{this.setCustomValidity('');}">
+
+                    </div>
+
+                    <div class="input-box">
+                        <i class="fa fa-phone"></i>
+                             <input type="tel"
+                                placeholder="Phone Number"
+                                required
+                                oninput="if(!/^[0-9]{10}$/.test(this.value)){this.setCustomValidity('Phone number must be exactly 10 digits');}else{this.setCustomValidity('');}">
+                    </div>
+
+                    <h4>Work Status</h4>
+
+                    <div class="status-box">
+
+                        <label class="status-card">
+
+                            <input type="radio" name="status">
+                            <span>I'm Experienced</span>
+
+                        </label>
+
+                        <label class="status-card">
+
+                            <input type="radio" name="status">
+                            <span>I'm a Fresher</span>
+
+                        </label>
+
+                    </div>
+                    
+                    <button type="submit" class="register-btn">Next & Continue</button>
+                    
+                
+
+                </form>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

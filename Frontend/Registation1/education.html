@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Education Details | AI Job Recommendation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="education-box">
+            <h2>Education Details</h2>
+            <p>Please provide your academic information</p>
+
+            <form id="educationForm">
+
+                <div class="input-group">
+                    <label>Highest Qualification</label>
+                    <select required>
+                        <option value="">Select Qualification</option>
+                        <option>Bachelor's Degree</option>
+                        <option>Master's Degree</option>
+                        <option>Diploma</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Course</label>
+                    <input type="text" placeholder="Example: MCA / B.Tech / B.Sc" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Course Type</label>
+                    <select required>
+                        <option value="">Select Type</option>
+                        <option>Regular</option>
+                        <option>Distance Learning</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Specialization</label>
+                    <input type="text" placeholder="Example: Computer Science" required>
+                </div>
+
+                <div class="input-group">
+                    <label>University / Institute Name</label>
+                    <input type="text" placeholder="Enter university name" required>
+                </div>
+
+                <div class="row">
+
+                    <div class="input-group">
+                        <label>Starting Year</label>
+                        <input type="number" placeholder="2019" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Passing Year</label>
+                        <input type="number" placeholder="2023" required>
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+                    <label>Grading System</label>
+                    <select required>
+                        <option value="">Select</option>
+                        <option>Percentage</option>
+                        <option>CGPA</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Percentage (Out of 100)</label>
+                    <input type="number" placeholder="Example: 85" required>
+                </div>
+
+                <button type="submit" class="next-btn">
+                Save & Continue
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background:#f4f6f9;
+}
+
+/* NAVBAR */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#0d6efd;
+    color:white;
+    padding:15px 40px;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+}
+
+.icons i{
+    margin-left:15px;
+    font-size:18px;
+}
+
+/* DASHBOARD LAYOUT */
+.dashboard{
+    display:flex;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:220px;
+    background:#1e293b;
+    color:white;
+    height:100vh;
+    padding:20px;
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar li{
+    padding:10px;
+    cursor:pointer;
+}
+
+.sidebar li:hover{
+    background:#334155;
+}
+
+/* MAIN CONTENT */
+.main-content{
+    flex:1;
+    padding:30px;
+}
+
+/* PROFILE CARD */
+.profile-card{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+.profile-card img{
+    width:80px;
+}
+
+/* STATS */
+.stats{
+    display:flex;
+    gap:20px;
+    margin:20px 0;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    flex:1;
+    text-align:center;
+}
+
+/* JOBS */
+.jobs{
+    display:flex;
+    gap:20px;
+}
+
+.job-card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    width:250px;
+}
+
+.job-card button{
+    background:#0d6efd;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}

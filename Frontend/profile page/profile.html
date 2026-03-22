@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Job Recommendation Profile</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+
+<!-- Logo -->
+
+    <div class="logo">
+        <i class="fa-solid fa-briefcase"></i>
+        <span>AI Job Portal</span>
+    </div>
+
+
+<!-- Navigation Links -->
+
+    <nav class="nav-links">
+
+<!-- Jobs Dropdown -->
+
+        <div class="job">
+            <a href="#" class="drop-btn">
+                Jobs <i class="fa-solid fa-caret-down"></i>
+            </a>
+
+            <div class="job-content">
+                <a href="#">
+                    <i class="fa-solid fa-laptop-code"></i> IT Jobs
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-building-columns"></i> Banking Jobs
+                </a>
+            </div>
+        </div>
+
+        <a href="#"> Companies</a>
+
+        <a href="#">Services</a>
+
+    </nav>
+
+
+<!-- Search Bar -->
+
+    <div class="search-box">
+
+        <input type="text" placeholder="Search jobs here">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+    </div>
+
+
+<!-- Right Icons -->
+
+    <div class="nav-icons">
+
+        <!-- Notification -->
+
+        <div class="notification">
+
+            <i class="fa-regular fa-bell"></i>
+
+            <span class="badge">3</span>
+
+        </div>
+
+
+        <!-- Profile -->
+
+        <div class="profile">
+
+            <i class="fa-solid fa-user-circle"></i>
+
+            <div class="dropdown">
+
+                <a href="../profile page/profile.html"><i class="fa-solid fa-user"></i> My Profile</a>
+
+               
+
+                <a href="../Landing page/landing.html"id="logoutBtn"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+
+            </div>
+        </div>
+
+
+        <!-- Menu Icon -->
+
+        <i class="fa-solid fa-bars"></i>
+
+    </div>
+
+</header>
+
+
+<!-- Main Profile Section -->
+
+<section class="profile-card">
+
+    <div class="profile-left">
+
+        <div class="profile-img">
+
+            <input type="file" id="upload" accept="image/*" hidden>
+
+            <label for="upload" class="img-box">
+                <img id="profilePreview" src="profile.jpg">
+                <div class="overlay">
+                    <i class="fa-solid fa-camera"></i>
+                    <p>Upload Image</p>
+                </div>
+            </label>
+            
+            <a href="../Basic details/basic.html"class="basic-btn">Basic Details</a>
+
+        </div>
+
+        
+        <div class="profile-info">
+
+            <h2>Swetaprangya Sahoo</h2>
+
+            <p>MCA</p>
+
+            <p>Trident Academy of Creative Technology, Bhubaneswar</p>
+
+            <div class="details">
+
+                <span><i class="fa-solid fa-location-dot"></i> Bhubaneswar</span>
+
+                <span><i class="fa-solid fa-phone"></i> 9078618282</span>
+
+                <span><i class="fa-solid fa-envelope"></i> sweta@gmail.com</span>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="profile-right">
+
+        <div class="missing-box">
+
+            <p><i class="fa-solid fa-graduation-cap"></i> Add education</p>
+
+            <p><i class="fa-solid fa-award"></i> Add achievements</p>
+
+            <p><i class="fa-solid fa-trophy"></i> Add competitive exam</p>
+
+            <button>Add missing details</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--tab section-->
+<div class="profile-tabs">
+
+    <a href="#" class="active-tab">View & Edit</a>
+
+    <a href="#">Activity Insights</a>
+
+</div>
+
+<!-- Main Layout -->
+
+<div class="main-layout">
+
+<!-- Sidebar -->
+
+    <aside class="sidebar">
+
+    <h3>Quick Links</h3>
+
+        <ul>
+
+            <li><i class="fa-solid fa-user"></i> Preference</li>
+
+            <li><i class="fa-solid fa-graduation-cap"></i> Education</li>
+
+            <li><i class="fa-solid fa-code"></i> Key Skills</li>
+
+            <li><i class="fa-solid fa-language"></i> Languages</li>
+
+            <li><i class="fa-solid fa-briefcase"></i> Internships</li>
+
+        </ul>
+
+    </aside>
+
+
+<!-- Main Content -->
+
+    <section class="content">
+
+        <h3>Your Career Preferences</h3>
+
+        <div class="card">
+
+            <p><b>Preferred Job Type:</b> Jobs, Internships</p>
+
+            <p><b>Preferred Location:</b> Hyderabad, Bangalore, Bhubaneswar</p>
+
+            <p><b>Availability to Work:</b> 1 Month</p>
+
+        </div>
+
+
+        <h3>Education</h3>
+
+        <div class="card">
+
+            <p><b>MCA</b></p>
+
+            <p>Trident Academy of Creative Technology</p>
+
+            <p>2024 - 2026</p>
+
+        </div>
+
+    </section>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
